@@ -808,16 +808,23 @@ img { max-width: 100%; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  align-items: stretch; /* important */
 }
+
 .project-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  transition: all var(--transition);
-  position: relative;
   display: flex;
   flex-direction: column;
+  height: 100%;
+}
+
+.project-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-desc {
+  flex-grow: 1; /* makes all cards equal height */
 }
 .project-card:hover {
   transform: translateY(-5px);
@@ -825,7 +832,7 @@ img { max-width: 100%; }
   box-shadow: var(--shadow-card);
 }
 .project-card.featured {
-  grid-column: span 2;
+  grid-column: span 1;
 }
 .project-card.hidden { display: none; }
 .project-number {
@@ -1282,6 +1289,46 @@ img { max-width: 100%; }
   background: var(--accent-glow);
   transform: translateY(-2px);
 }
+
+
+.projects-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.view-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: 999px;
+
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  font-size: 14px;
+
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.02);
+  backdrop-filter: blur(10px);
+
+  transition: all 0.3s ease;
+}
+
+.view-more-btn:hover {
+  color: white;
+  border-color: #00d4ff;
+  background: rgba(0,212,255,0.08);
+}
+
+.view-more-btn .arrow {
+  transition: transform 0.3s ease;
+}
+
+.view-more-btn:hover .arrow {
+  transform: translate(4px, -4px);
+}
+
 
 /* Remove old skills styles that might conflict */
 .skills-grid, .skill-category, .skill-list, .skill-item,

@@ -22,3 +22,42 @@ class Experience(models.Model):
         return f"{self.role} at {self.company}"
 
 
+class Project(models.Model):
+
+    CATEGORY_CHOICES = [
+        ('fullstack', 'Full Stack'),
+        ('backend', 'Backend'),
+        ('api', 'API'),
+    ]
+
+    title = models.CharField(max_length=200)
+
+    # store bullet points (each line = one point)
+    description = models.TextField(
+        help_text="Enter each point on a new line"
+    )
+
+    technologies = models.CharField(
+        max_length=200,
+        help_text="Comma separated (e.g. Django, React, PostgreSQL)"
+    )
+
+    category = models.CharField(
+        max_length=20,
+        choices=CATEGORY_CHOICES,
+        default='fullstack'
+    )
+
+    featured = models.BooleanField(default=False)
+
+    source_code = models.URLField(blank=True, null=True)
+    demo_link = models.URLField(blank=True, null=True)
+
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def tech_list(self):
+        return [tech.strip() for tech in self.technologies.split(',')]
+
+    def __str__(self):
+        return self.title
+
