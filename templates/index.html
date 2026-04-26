@@ -573,37 +573,40 @@
           <p class="contact-sub">I'm open to full-time roles, contract work, and interesting open-source collaborations. If you have a Python / Django / FastAPI project — let's talk.</p>
 
           <div class="contact-links">
-            <a href="mailto:you@email.com" class="contact-link">
+            <a href="mailto:prajilap01@gmail.com" class="contact-link">
               <div class="clink-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
               </div>
               <div class="clink-body">
                 <span class="clink-label">Email</span>
-                <span class="clink-value">you@email.com</span>
+                <span class="clink-value">prajilap01@gmail.com</span>
               </div>
               <svg class="clink-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
-            <a href="https://github.com/yourname" target="_blank" class="contact-link">
+            <a href="https://github.com/PRAJILA-P/" target="_blank" class="contact-link">
               <div class="clink-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
               </div>
               <div class="clink-body">
                 <span class="clink-label">GitHub</span>
-                <span class="clink-value">github.com/yourname</span>
+                <span class="clink-value">github.com/PRAJILA-P</span>
               </div>
               <svg class="clink-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
-            <a href="https://linkedin.com/in/yourname" target="_blank" class="contact-link">
-              <div class="clink-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-              </div>
-              <div class="clink-body">
-                <span class="clink-label">LinkedIn</span>
-                <span class="clink-value">linkedin.com/in/yourname</span>
-              </div>
-              <svg class="clink-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-            <a href="#" class="contact-link">
+
+            <a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank" class="contact-link">
+  <div class="clink-icon">
+    <img src="https://static.naukimg.com/s/0/0/i/naukri-identity/naukri_gnb_logo.svg" width="18" height="18" alt="Naukri">
+  </div>
+  <div class="clink-body">
+    <span class="clink-label">Naukri</span>
+    <span class="clink-value">naukri.com/your-profile</span>
+  </div>
+  <svg class="clink-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
+    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</a>
+            <a href="{% url 'download_resume' %}" class="contact-link">
               <div class="clink-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
               </div>
@@ -625,35 +628,69 @@
               <span>✓</span>
               <p>Message sent! I'll get back to you soon.</p>
             </div>
-            <div id="contactForm">
-              <div class="form-group">
-                <label class="form-label">NAME <span class="req">*</span></label>
-                <input type="text" id="fname" class="form-input" placeholder="John Doe" />
-              </div>
-              <div class="form-group">
-                <label class="form-label">EMAIL <span class="req">*</span></label>
-                <input type="email" id="femail" class="form-input" placeholder="john@company.com" />
-              </div>
-              <div class="form-group">
-                <label class="form-label">PROJECT TYPE</label>
-                <select id="ftype" class="form-input form-select">
-                  <option value="">-- Select type --</option>
-                  <option>Full Stack Web App</option>
-                  <option>REST API / Backend</option>
-                  <option>Django / FastAPI Project</option>
-                  <option>Open Source Collab</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label class="form-label">MESSAGE <span class="req">*</span></label>
-                <textarea id="fmessage" class="form-input form-textarea" placeholder="Tell me about your project..."></textarea>
-              </div>
-              <button class="btn-send" id="sendBtn">
-                <span>→ SEND MESSAGE</span>
-                <div class="send-loader hidden" id="sendLoader"></div>
-              </button>
-            </div>
+              <form method="POST" action="{% url 'send_message' %}">
+  {% csrf_token %}
+
+  <div class="form-group">
+    <label class="form-label">NAME <span class="req">*</span></label>
+    <input type="text" name="name" class="form-input" required />
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">EMAIL <span class="req">*</span></label>
+    <input type="email" name="email" class="form-input" required />
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">PROJECT TYPE</label>
+    <select name="type" class="form-input form-select">
+      <option value="">-- Select type --</option>
+      <option>Full Stack Web App</option>
+      <option>REST API / Backend</option>
+      <option>Django / FastAPI Project</option>
+      <option>Open Source Collab</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">MESSAGE <span class="req">*</span></label>
+    <textarea name="message" class="form-input form-textarea" required></textarea>
+  </div>
+
+  <button type="submit" class="btn-send">
+    → SEND MESSAGE
+  </button>
+</form>
+<!--            <div id="contactForm">-->
+<!--              <div class="form-group">-->
+<!--                <label class="form-label">NAME <span class="req">*</span></label>-->
+<!--                <input type="text" id="fname" class="form-input" placeholder="John Doe" />-->
+<!--              </div>-->
+<!--              <div class="form-group">-->
+<!--                <label class="form-label">EMAIL <span class="req">*</span></label>-->
+<!--                <input type="email" id="femail" class="form-input" placeholder="john@company.com" />-->
+<!--              </div>-->
+<!--              <div class="form-group">-->
+<!--                <label class="form-label">PROJECT TYPE</label>-->
+<!--                <select id="ftype" class="form-input form-select">-->
+<!--                  <option value="">&#45;&#45; Select type &#45;&#45;</option>-->
+<!--                  <option>Full Stack Web App</option>-->
+<!--                  <option>REST API / Backend</option>-->
+<!--                  <option>Django / FastAPI Project</option>-->
+<!--                  <option>Open Source Collab</option>-->
+<!--                  <option>Other</option>-->
+<!--                </select>-->
+<!--              </div>-->
+<!--              <div class="form-group">-->
+<!--                <label class="form-label">MESSAGE <span class="req">*</span></label>-->
+<!--                <textarea id="fmessage" class="form-input form-textarea" placeholder="Tell me about your project..."></textarea>-->
+<!--              </div>-->
+<!--              <button class="btn-send" id="sendBtn">-->
+<!--                <span>→ SEND MESSAGE</span>-->
+<!--                <div class="send-loader hidden" id="sendLoader"></div>-->
+<!--              </button>-->
+<!--            </div>-->
           </div>
         </div>
       </div>
