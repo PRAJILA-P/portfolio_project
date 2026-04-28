@@ -27,7 +27,7 @@ def send_message(request):
         full_message = f"""
         Name: {name}
         Email: {email}
-        Project Type: {project_type}
+       
 
         Message:
         {message}

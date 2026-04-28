@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alex Python | Full Stack Developer</title>
+  <title>Prajila p | Full Stack Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
@@ -69,57 +69,69 @@
     </div>
     <div class="hero-content">
       <div class="hero-photo-top">
-        <div class="photo-frame-top">
-          <div class="photo-placeholder">
-            <svg width="60" height="60" viewBox="0 0 80 80" fill="none">
-              <circle cx="40" cy="32" r="16" stroke="currentColor" stroke-width="2"/>
-              <path d="M12 68c0-15.464 12.536-28 28-28s28 12.536 28 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-            <span>Your Photo</span>
-          </div>
-        </div>
+
+
+          <div class="photo-frame-top">
+  <img src="{% static 'images/profile.png' %}"
+       alt="Prajila Profile Photo"
+       onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+  <div class="photo-placeholder" style="display:none;">
+    <span>No Image</span>
+  </div>
+</div>
 <!--        <div class="hero-badge">-->
 <!--          <span class="badge-dot"></span>-->
 <!--          Available for work-->
 <!--        </div>-->
       </div>
-      <h1 class="hero-name">
-        <span class="name-line" data-text="Alex">PRAJILA.P</span>
-<!--        <span class="name-line accent" data-text="Johnson"></span>-->
-      </h1>
-      <div class="hero-title">
-        <span class="title-static">Python</span>
-        <span class="title-divider">×</span>
-        <span class="title-rotating" id="rotatingTitle">Full Stack Dev</span>
-      </div>
-      <p class="hero-desc">
-        3 years crafting scalable backends & sleek frontends.<br />
-        Django · FastAPI · React · PostgreSQL
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">
-          <span>View Work</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-num" data-count="3">0</span><span class="stat-plus">+</span>
-          <span class="stat-label">Years Exp</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num" data-count="20">0</span><span class="stat-plus">+</span>
-          <span class="stat-label">Projects</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num" data-count="15">0</span><span class="stat-plus">+</span>
-          <span class="stat-label">Clients</span>
-        </div>
-      </div>
-    </div>
+
+
+        <h1 class="hero-name">
+  <span class="name-line" data-text="PRAJILA.P">PRAJILA.P</span>
+</h1>
+
+<div class="hero-title">
+  <span class="title-static">Python Full Stack Developer</span>
+  <span class="title-divider">×</span>
+  <span class="title-rotating" id="rotatingTitle">Django • FastAPI • REST APIs</span>
+</div>
+
+<p class="hero-desc">
+  Building scalable web applications and robust backend systems with 2+ years of experience.<br />
+  Specialized in Django, RESTful API development, authentication, and database optimization.
+</p>
+
+<div class="hero-actions">
+  <a href="#projects" class="btn btn-primary">
+    <span>View Projects</span>
+  </a>
+  <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+</div>
+
+<!--<div class="hero-stats">-->
+<!--  <div class="stat">-->
+<!--    <span class="stat-num" data-count="2">0</span><span class="stat-plus">+</span>-->
+<!--    <span class="stat-label">Years Experience</span>-->
+<!--  </div>-->
+
+<!--  <div class="stat-divider"></div>-->
+
+<!--  <div class="stat">-->
+<!--    <span class="stat-num" data-count="20">0</span><span class="stat-plus">+</span>-->
+<!--    <span class="stat-label">Projects Built</span>-->
+<!--  </div>-->
+
+<!--  <div class="stat-divider"></div>-->
+
+<!--  <div class="stat">-->
+<!--    <span class="stat-num" data-count="10">0</span><span class="stat-plus">+</span>-->
+<!--    <span class="stat-label">Technologies</span>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+        <br><br><br><br>
     <div class="scroll-cue">
       <span>Scroll</span>
       <div class="scroll-line"></div>
@@ -169,7 +181,7 @@
     </p>
 
     <div class="about-actions">
-      <a href="#" class="btn btn-primary">Download CV</a>
+      <a href="{% url 'download_resume' %}" class="btn btn-primary">Download CV</a>
       <a href="#contact" class="btn btn-ghost">Get in Touch</a>
     </div>
   </div>
@@ -548,7 +560,7 @@
 
 </div>
 <div class="projects-cta">
-  <a href="https://github.com/PRAJILA-P/" class="view-more-btn">
+  <a href="https://github.com/PRAJILA-P/" target="_blank" class="view-more-btn">
     View More Projects
     <span class="arrow">↗</span>
   </a>
@@ -628,7 +640,9 @@
               <span>✓</span>
               <p>Message sent! I'll get back to you soon.</p>
             </div>
-              <form method="POST" action="{% url 'send_message' %}">
+
+
+              <form method="POST" action="{% url 'send_message' %}" class="contact-form">
   {% csrf_token %}
 
   <div class="form-group">
@@ -641,17 +655,17 @@
     <input type="email" name="email" class="form-input" required />
   </div>
 
-  <div class="form-group">
-    <label class="form-label">PROJECT TYPE</label>
-    <select name="type" class="form-input form-select">
-      <option value="">-- Select type --</option>
-      <option>Full Stack Web App</option>
-      <option>REST API / Backend</option>
-      <option>Django / FastAPI Project</option>
-      <option>Open Source Collab</option>
-      <option>Other</option>
-    </select>
-  </div>
+<!--  <div class="form-group">-->
+<!--    <label class="form-label">PROJECT TYPE</label>-->
+<!--    <select name="type" class="form-input form-select">-->
+<!--      <option value="">&#45;&#45; Select type &#45;&#45;</option>-->
+<!--      <option>Full Stack Web App</option>-->
+<!--      <option>REST API / Backend</option>-->
+<!--      <option>Django / FastAPI Project</option>-->
+<!--      <option>Open Source Collab</option>-->
+<!--      <option>Other</option>-->
+<!--    </select>-->
+<!--  </div>-->
 
   <div class="form-group">
     <label class="form-label">MESSAGE <span class="req">*</span></label>
@@ -703,15 +717,15 @@
       <div class="footer-content">
         <div class="footer-logo">
           <span class="logo-bracket">&lt;</span>
-          <span class="logo-name">Alex</span>
+          <span class="logo-name">Prajila</span>
           <span class="logo-bracket">/&gt;</span>
         </div>
-        <p class="footer-copy">Designed & built by Alex Johnson · 2024</p>
-        <div class="footer-socials">
-          <a href="#" class="social-icon">GH</a>
-          <a href="#" class="social-icon">LI</a>
-          <a href="#" class="social-icon">TW</a>
-        </div>
+        <p class="footer-copy">Designed & built by PRAJILA P · </p>
+<!--        <div class="footer-socials">-->
+<!--          <a href="#" class="social-icon">GH</a>-->
+<!--          <a href="#" class="social-icon">LI</a>-->
+<!--          <a href="#" class="social-icon">TW</a>-->
+<!--        </div>-->
       </div>
     </div>
   </footer>

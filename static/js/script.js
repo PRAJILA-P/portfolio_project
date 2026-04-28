@@ -151,14 +151,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ─── ROTATING TITLE ─── */
-  const titles = [
-    'Full Stack Dev',
-    'Django Expert',
-    'FastAPI Builder',
-    'API Architect',
-    'React Developer',
-    'Open-Source Fan',
-  ];
+const titles = [
+  "FastAPI Developer",
+    "Django Developer",
+    "Python Backend Developer",
+  "REST API Specialist",
+  "Backend Engineer"
+];
   const rotEl = document.getElementById('rotatingTitle');
   let titleIndex = 0;
 
