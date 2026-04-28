@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alex Python | Full Stack Developer</title>
+  <title>Prajila p | Full Stack Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
   
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
 
@@ -24,7 +24,7 @@
   <nav class="nav" id="nav">
     <div class="nav-logo">
       <span class="logo-bracket">&lt;</span>
-      <span class="logo-name">Alex</span>
+      <span class="logo-name">Prajila</span>
       <span class="logo-bracket">/&gt;</span>
     </div>
     <ul class="nav-links">
@@ -69,57 +69,69 @@
     </div>
     <div class="hero-content">
       <div class="hero-photo-top">
-        <div class="photo-frame-top">
-          <div class="photo-placeholder">
-            <svg width="60" height="60" viewBox="0 0 80 80" fill="none">
-              <circle cx="40" cy="32" r="16" stroke="currentColor" stroke-width="2"/>
-              <path d="M12 68c0-15.464 12.536-28 28-28s28 12.536 28 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-            <span>Your Photo</span>
-          </div>
-        </div>
-        <div class="hero-badge">
-          <span class="badge-dot"></span>
-          Available for work
-        </div>
+
+
+          <div class="photo-frame-top">
+  <img src="{% static 'images/profile.png' %}"
+       alt="Prajila Profile Photo"
+       onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+  <div class="photo-placeholder" style="display:none;">
+    <span>No Image</span>
+  </div>
+</div>
+<!--        <div class="hero-badge">-->
+<!--          <span class="badge-dot"></span>-->
+<!--          Available for work-->
+<!--        </div>-->
       </div>
-      <h1 class="hero-name">
-        <span class="name-line" data-text="Alex">Alex</span>
-        <span class="name-line accent" data-text="Johnson">Johnson</span>
-      </h1>
-      <div class="hero-title">
-        <span class="title-static">Python</span>
-        <span class="title-divider">×</span>
-        <span class="title-rotating" id="rotatingTitle">Full Stack Dev</span>
-      </div>
-      <p class="hero-desc">
-        3 years crafting scalable backends & sleek frontends.<br />
-        Django · FastAPI · React · PostgreSQL
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">
-          <span>View Work</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-num" data-count="3">0</span><span class="stat-plus">+</span>
-          <span class="stat-label">Years Exp</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num" data-count="20">0</span><span class="stat-plus">+</span>
-          <span class="stat-label">Projects</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num" data-count="15">0</span><span class="stat-plus">+</span>
-          <span class="stat-label">Clients</span>
-        </div>
-      </div>
-    </div>
+
+
+        <h1 class="hero-name">
+  <span class="name-line" data-text="PRAJILA.P">PRAJILA.P</span>
+</h1>
+
+<div class="hero-title">
+  <span class="title-static">Python Full Stack Developer</span>
+  <span class="title-divider">×</span>
+  <span class="title-rotating" id="rotatingTitle">Django • FastAPI • REST APIs</span>
+</div>
+
+<p class="hero-desc">
+  Building scalable web applications and robust backend systems with 2+ years of experience.<br />
+  Specialized in Django, RESTful API development, authentication, and database optimization.
+</p>
+
+<div class="hero-actions">
+  <a href="#projects" class="btn btn-primary">
+    <span>View Projects</span>
+  </a>
+  <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+</div>
+
+<!--<div class="hero-stats">-->
+<!--  <div class="stat">-->
+<!--    <span class="stat-num" data-count="2">0</span><span class="stat-plus">+</span>-->
+<!--    <span class="stat-label">Years Experience</span>-->
+<!--  </div>-->
+
+<!--  <div class="stat-divider"></div>-->
+
+<!--  <div class="stat">-->
+<!--    <span class="stat-num" data-count="20">0</span><span class="stat-plus">+</span>-->
+<!--    <span class="stat-label">Projects Built</span>-->
+<!--  </div>-->
+
+<!--  <div class="stat-divider"></div>-->
+
+<!--  <div class="stat">-->
+<!--    <span class="stat-num" data-count="10">0</span><span class="stat-plus">+</span>-->
+<!--    <span class="stat-label">Technologies</span>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+        <br><br><br><br>
     <div class="scroll-cue">
       <span>Scroll</span>
       <div class="scroll-line"></div>
@@ -133,145 +145,297 @@
         <span class="label-line"></span>
         <span>01. ABOUT</span>
       </div>
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <h2 class="section-title">Turning ideas into<br /><em>production-ready</em> code.</h2>
-          <p>I'm a Python Full Stack Developer with <strong>3 years</strong> of hands-on experience building robust web applications — from RESTful APIs to interactive user interfaces.</p>
-          <p>My stack is rooted in <strong>Python</strong> (Django, FastAPI, Flask) on the backend, paired with <strong>React / Vue</strong> and modern CSS on the frontend. I love clean architecture, fast APIs, and meaningful UX.</p>
-          <p>When I'm not writing code, I'm probably reading about distributed systems, contributing to open-source, or brewing coffee ☕</p>
-          <div class="about-actions">
-            <a href="#" class="btn btn-primary">Download CV</a>
-            <a href="#contact" class="btn btn-ghost">Get in Touch</a>
-          </div>
-        </div>
+<!--      <div class="about-grid">-->
+<!--        <div class="about-text reveal">-->
+<!--          <h2 class="section-title">Turning ideas into<br /><em>production-ready</em> code.</h2>-->
+<!--          <p>I'm a Python Full Stack Developer with <strong>3 years</strong> of hands-on experience building robust web applications — from RESTful APIs to interactive user interfaces.</p>-->
+<!--          <p>My stack is rooted in <strong>Python</strong> (Django, FastAPI, Flask) on the backend, paired with <strong>React / Vue</strong> and modern CSS on the frontend. I love clean architecture, fast APIs, and meaningful UX.</p>-->
+<!--          <p>When I'm not writing code, I'm probably reading about distributed systems, contributing to open-source, or brewing coffee ☕</p>-->
+<!--          <div class="about-actions">-->
+<!--            <a href="#" class="btn btn-primary">Download CV</a>-->
+<!--            <a href="#contact" class="btn btn-ghost">Get in Touch</a>-->
+<!--          </div>-->
+<!--        </div>-->
 
-      </div>
+<!--      </div>-->
+        <div class="about-grid">
+  <div class="about-text reveal">
+    <h2 class="section-title">
+      Turning ideas into<br /><em>production-ready</em> code.
+    </h2>
+
+    <p>
+      I’m a Python Full Stack Developer with nearly <strong>3 years</strong> of hands-on experience building and deploying dynamic, scalable web applications — from backend logic to smooth, user-friendly interfaces.
+    </p>
+
+    <p>
+      I work primarily with <strong>Django, FastAPI, and Flask</strong>, along with modern frontend tools like <strong>HTML, CSS, JavaScript, and Bootstrap</strong>. I enjoy creating end-to-end solutions that are clean, efficient, and built to scale.
+    </p>
+
+    <p>
+      My experience includes building secure RESTful APIs, handling authentication systems, and optimizing database performance. I focus on writing maintainable code and delivering applications that feel fast and intuitive to use.
+    </p>
+
+    <p>
+      Outside of coding, I enjoy reading, exploring backend concepts, and continuously learning new technologies — usually with a good cup of coffee ☕.
+    </p>
+
+    <div class="about-actions">
+      <a href="{% url 'download_resume' %}" class="btn btn-primary">Download CV</a>
+      <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+    </div>
+  </div>
+</div>
     </div>
   </section>
 
   <!-- SKILLS -->
+<!--  <section class="section skills" id="skills">-->
+<!--    <div class="container">-->
+<!--      <div class="section-label">-->
+<!--        <span class="label-line"></span>-->
+<!--        <span>02. SKILLS</span>-->
+<!--      </div>-->
+<!--      <h2 class="section-title reveal">My Tech <em>Stack</em></h2>-->
+
+<!--      <div class="sk-grid reveal">-->
+
+<!--        &lt;!&ndash; Backend &ndash;&gt;-->
+<!--        <div class="sk-card">-->
+<!--          <div class="sk-card-header">-->
+<!--            <span class="sk-file-tag">// backend</span>-->
+<!--          </div>-->
+<!--          <div class="sk-card-body">-->
+<!--            <div class="sk-title-row">-->
+<!--              <span class="sk-icon">🐍</span>-->
+<!--              <h3>Python &amp; Backend</h3>-->
+<!--            </div>-->
+<!--            <div class="sk-tags">-->
+<!--              <span>Python 3.x</span><span>Django</span><span>FastAPI</span><span>Flask</span>-->
+<!--              <span>Django REST Framework</span><span>Django Channels</span>-->
+<!--              <span>REST API Development</span><span>WebSockets</span>-->
+<!--              <span>Asynchronous Programming</span><span>JWT Authentication</span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Frontend &ndash;&gt;-->
+<!--        <div class="sk-card">-->
+<!--          <div class="sk-card-header">-->
+<!--            <span class="sk-file-tag">// frontend</span>-->
+<!--          </div>-->
+<!--          <div class="sk-card-body">-->
+<!--            <div class="sk-title-row">-->
+<!--              <span class="sk-icon">⚡</span>-->
+<!--              <h3>Frontend</h3>-->
+<!--            </div>-->
+<!--            <div class="sk-tags">-->
+<!--              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>-->
+<!--              <span>Bootstrap</span><span>Tailwind CSS</span><span>jQuery</span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Databases &ndash;&gt;-->
+<!--        <div class="sk-card">-->
+<!--          <div class="sk-card-header">-->
+<!--            <span class="sk-file-tag">// data</span>-->
+<!--          </div>-->
+<!--          <div class="sk-card-body">-->
+<!--            <div class="sk-title-row">-->
+<!--              <span class="sk-icon">🗄️</span>-->
+<!--              <h3>Databases &amp; Data</h3>-->
+<!--            </div>-->
+<!--            <div class="sk-tags">-->
+<!--              <span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span>-->
+<!--              <span>SQLite</span><span>Firebase Realtime DB</span>-->
+<!--              <span>Django ORM</span><span>NumPy</span><span>Pandas</span>-->
+<!--              <span>Matplotlib</span><span>Seaborn</span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; DevOps & Infra &ndash;&gt;-->
+<!--        <div class="sk-card">-->
+<!--          <div class="sk-card-header">-->
+<!--            <span class="sk-file-tag">// infra</span>-->
+<!--          </div>-->
+<!--          <div class="sk-card-body">-->
+<!--            <div class="sk-title-row">-->
+<!--              <span class="sk-icon">🛠️</span>-->
+<!--              <h3>DevOps &amp; Infra</h3>-->
+<!--            </div>-->
+<!--            <div class="sk-tags">-->
+<!--              <span>Git</span><span>GitHub</span><span>Docker</span>-->
+<!--              <span>CI/CD Pipelines</span><span>Cloud Deployment</span>-->
+<!--              <span>Nginx</span><span>Daphne</span><span>Linux</span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Languages &ndash;&gt;-->
+<!--        <div class="sk-card">-->
+<!--          <div class="sk-card-header">-->
+<!--            <span class="sk-file-tag">// languages</span>-->
+<!--          </div>-->
+<!--          <div class="sk-card-body">-->
+<!--            <div class="sk-title-row">-->
+<!--              <span class="sk-icon">💻</span>-->
+<!--              <h3>Languages</h3>-->
+<!--            </div>-->
+<!--            <div class="sk-tags">-->
+<!--              <span>Python</span><span>JavaScript</span><span>SQL</span>-->
+<!--              <span>HTML</span><span>CSS</span><span>C++</span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Tools & Libraries &ndash;&gt;-->
+<!--        <div class="sk-card">-->
+<!--          <div class="sk-card-header">-->
+<!--            <span class="sk-file-tag">// tools &amp; libs</span>-->
+<!--          </div>-->
+<!--          <div class="sk-card-body">-->
+<!--            <div class="sk-title-row">-->
+<!--              <span class="sk-icon">🔧</span>-->
+<!--              <h3>Tools &amp; Libraries</h3>-->
+<!--            </div>-->
+<!--            <div class="sk-tags">-->
+<!--              <span>VS Code</span><span>PyCharm</span><span>Jupyter</span>-->
+<!--              <span>Postman</span><span>OpenCV</span><span>wkhtmltopdf</span>-->
+<!--              <span>RBAC</span><span>API Testing</span><span>API Debugging</span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+
+
   <section class="section skills" id="skills">
-    <div class="container">
-      <div class="section-label">
-        <span class="label-line"></span>
-        <span>02. SKILLS</span>
-      </div>
-      <h2 class="section-title reveal">My Tech <em>Stack</em></h2>
-
-      <div class="sk-grid reveal">
-
-        <!-- Backend -->
-        <div class="sk-card">
-          <div class="sk-card-header">
-            <span class="sk-file-tag">// backend</span>
-          </div>
-          <div class="sk-card-body">
-            <div class="sk-title-row">
-              <span class="sk-icon">🐍</span>
-              <h3>Python &amp; Backend</h3>
-            </div>
-            <div class="sk-tags">
-              <span>Python 3.x</span><span>Django</span><span>FastAPI</span><span>Flask</span>
-              <span>Django REST Framework</span><span>Django Channels</span>
-              <span>REST API Development</span><span>WebSockets</span>
-              <span>Asynchronous Programming</span><span>JWT Authentication</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Frontend -->
-        <div class="sk-card">
-          <div class="sk-card-header">
-            <span class="sk-file-tag">// frontend</span>
-          </div>
-          <div class="sk-card-body">
-            <div class="sk-title-row">
-              <span class="sk-icon">⚡</span>
-              <h3>Frontend</h3>
-            </div>
-            <div class="sk-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
-              <span>Bootstrap</span><span>Tailwind CSS</span><span>jQuery</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Databases -->
-        <div class="sk-card">
-          <div class="sk-card-header">
-            <span class="sk-file-tag">// data</span>
-          </div>
-          <div class="sk-card-body">
-            <div class="sk-title-row">
-              <span class="sk-icon">🗄️</span>
-              <h3>Databases &amp; Data</h3>
-            </div>
-            <div class="sk-tags">
-              <span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span>
-              <span>SQLite</span><span>Firebase Realtime DB</span>
-              <span>Django ORM</span><span>NumPy</span><span>Pandas</span>
-              <span>Matplotlib</span><span>Seaborn</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- DevOps & Infra -->
-        <div class="sk-card">
-          <div class="sk-card-header">
-            <span class="sk-file-tag">// infra</span>
-          </div>
-          <div class="sk-card-body">
-            <div class="sk-title-row">
-              <span class="sk-icon">🛠️</span>
-              <h3>DevOps &amp; Infra</h3>
-            </div>
-            <div class="sk-tags">
-              <span>Git</span><span>GitHub</span><span>Docker</span>
-              <span>CI/CD Pipelines</span><span>Cloud Deployment</span>
-              <span>Nginx</span><span>Daphne</span><span>Linux</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Languages -->
-        <div class="sk-card">
-          <div class="sk-card-header">
-            <span class="sk-file-tag">// languages</span>
-          </div>
-          <div class="sk-card-body">
-            <div class="sk-title-row">
-              <span class="sk-icon">💻</span>
-              <h3>Languages</h3>
-            </div>
-            <div class="sk-tags">
-              <span>Python</span><span>JavaScript</span><span>SQL</span>
-              <span>HTML</span><span>CSS</span><span>C++</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tools & Libraries -->
-        <div class="sk-card">
-          <div class="sk-card-header">
-            <span class="sk-file-tag">// tools &amp; libs</span>
-          </div>
-          <div class="sk-card-body">
-            <div class="sk-title-row">
-              <span class="sk-icon">🔧</span>
-              <h3>Tools &amp; Libraries</h3>
-            </div>
-            <div class="sk-tags">
-              <span>VS Code</span><span>PyCharm</span><span>Jupyter</span>
-              <span>Postman</span><span>OpenCV</span><span>wkhtmltopdf</span>
-              <span>RBAC</span><span>API Testing</span><span>API Debugging</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
+  <div class="container">
+    <div class="section-label">
+      <span class="label-line"></span>
+      <span>02. SKILLS</span>
     </div>
-  </section>
+    <h2 class="section-title reveal">My Tech <em>Stack</em></h2>
 
+    <div class="sk-grid reveal">
+
+      <!-- Backend Development -->
+      <div class="sk-card">
+        <div class="sk-card-header">
+          <span class="sk-file-tag">// backend</span>
+        </div>
+        <div class="sk-card-body">
+          <div class="sk-title-row">
+            <span class="sk-icon">🐍</span>
+            <h3>Backend Development</h3>
+          </div>
+          <div class="sk-tags">
+            <span>Python</span><span>Django</span><span>Django REST Framework</span>
+            <span>FastAPI</span><span>Flask</span>
+            <span>REST API Development</span><span>JWT Authentication</span>
+            <span>Django Channels</span><span>WebSockets</span>
+            <span>Asynchronous Programming</span><span>RBAC</span>
+            <span>Daphne (ASGI Server)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frontend Development -->
+      <div class="sk-card">
+        <div class="sk-card-header">
+          <span class="sk-file-tag">// frontend</span>
+        </div>
+        <div class="sk-card-body">
+          <div class="sk-title-row">
+            <span class="sk-icon">⚡</span>
+            <h3>Frontend Development</h3>
+          </div>
+          <div class="sk-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>React</span><span>Bootstrap</span>
+            <span>Tailwind CSS</span><span>jQuery</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="sk-card">
+        <div class="sk-card-header">
+          <span class="sk-file-tag">// database</span>
+        </div>
+        <div class="sk-card-body">
+          <div class="sk-title-row">
+            <span class="sk-icon">🗄️</span>
+            <h3>Databases</h3>
+          </div>
+          <div class="sk-tags">
+            <span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span>
+            <span>SQLite</span><span>Firebase Realtime Database</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data & Analysis -->
+      <div class="sk-card">
+        <div class="sk-card-header">
+          <span class="sk-file-tag">// data</span>
+        </div>
+        <div class="sk-card-body">
+          <div class="sk-title-row">
+            <span class="sk-icon">📊</span>
+            <h3>Data &amp; Analysis</h3>
+          </div>
+          <div class="sk-tags">
+            <span>NumPy</span><span>Pandas</span>
+            <span>Matplotlib</span><span>Seaborn</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="sk-card">
+        <div class="sk-card-header">
+          <span class="sk-file-tag">// languages</span>
+        </div>
+        <div class="sk-card-body">
+          <div class="sk-title-row">
+            <span class="sk-icon">💻</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="sk-tags">
+            <span>Python</span><span>JavaScript</span>
+            <span>SQL</span><span>C++</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Development Tools & Testing -->
+      <div class="sk-card">
+        <div class="sk-card-header">
+          <span class="sk-file-tag">// tools</span>
+        </div>
+        <div class="sk-card-body">
+          <div class="sk-title-row">
+            <span class="sk-icon">🔧</span>
+            <h3>Development Tools &amp; Testing</h3>
+          </div>
+          <div class="sk-tags">
+            <span>Git</span><span>GitHub</span>
+            <span>VS Code</span><span>PyCharm</span>
+            <span>Jupyter Notebook</span><span>Postman</span>
+            <span>API Testing</span><span>API Debugging</span>
+            <span>OpenCV</span><span>wkhtmltopdf</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
   <!-- EXPERIENCE -->
   <section class="section experience" id="experience">
     <div class="container">
@@ -280,85 +444,50 @@
         <span>03. EXPERIENCE</span>
       </div>
       <h2 class="section-title reveal">Where I've <em>Worked</em></h2>
-      <div class="timeline reveal">
 
-        <div class="timeline-item active" data-index="0">
-          <div class="timeline-dot"></div>
-          <div class="timeline-connector"></div>
-          <div class="timeline-card">
-            <div class="exp-header">
-              <div>
-                <h3 class="exp-role">Python Full Stack Developer</h3>
-                <span class="exp-company">TechFlow Solutions</span>
-              </div>
-              <div class="exp-meta">
-                <span class="exp-type">Full-time</span>
-                <span class="exp-date">Jan 2023 – Present</span>
-              </div>
-            </div>
-            <ul class="exp-points">
-              <li>Built and maintained REST APIs using FastAPI serving 50k+ daily requests</li>
-              <li>Architected microservices for a SaaS billing platform with Django + Celery</li>
-              <li>Reduced API response times by 40% through Redis caching & query optimization</li>
-              <li>Led frontend migration from jQuery to React for a customer dashboard</li>
-            </ul>
-            <div class="exp-tags">
-              <span>FastAPI</span><span>Django</span><span>React</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span>
-            </div>
-          </div>
+<div class="timeline reveal">
+
+  {% for exp in experiences %}
+  <div class="timeline-item {% if forloop.first %}active{% endif %}">
+
+    <div class="timeline-dot"></div>
+    <div class="timeline-connector"></div>
+
+    <div class="timeline-card">
+
+      <div class="exp-header">
+        <div>
+          <h3 class="exp-role">{{ exp.role }}</h3>
+          <span class="exp-company">{{ exp.company }}</span>
         </div>
 
-        <div class="timeline-item" data-index="1">
-          <div class="timeline-dot"></div>
-          <div class="timeline-connector"></div>
-          <div class="timeline-card">
-            <div class="exp-header">
-              <div>
-                <h3 class="exp-role">Backend Developer</h3>
-                <span class="exp-company">DataPulse Labs</span>
-              </div>
-              <div class="exp-meta">
-                <span class="exp-type">Contract</span>
-                <span class="exp-date">Jun 2022 – Dec 2022</span>
-              </div>
-            </div>
-            <ul class="exp-points">
-              <li>Developed data pipeline APIs using Flask & Pandas for analytics platform</li>
-              <li>Integrated third-party payment gateways (Stripe, Razorpay) into Django apps</li>
-              <li>Designed PostgreSQL schemas with SQLAlchemy ORM for reporting modules</li>
-            </ul>
-            <div class="exp-tags">
-              <span>Flask</span><span>Pandas</span><span>Stripe</span><span>SQLAlchemy</span><span>AWS EC2</span>
-            </div>
-          </div>
+        <div class="exp-meta">
+<!--          <span class="exp-type">Full-time</span>-->
+          <span class="exp-date">
+            {{ exp.start_date|date:"M Y" }} –
+            {% if exp.end_date %}
+              {{ exp.end_date|date:"M Y" }}
+            {% else %}
+              Present
+            {% endif %}
+          </span>
         </div>
-
-        <div class="timeline-item" data-index="2">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="exp-header">
-              <div>
-                <h3 class="exp-role">Junior Python Developer</h3>
-                <span class="exp-company">WebNest Agency</span>
-              </div>
-              <div class="exp-meta">
-                <span class="exp-type">Full-time</span>
-                <span class="exp-date">Jan 2022 – May 2022</span>
-              </div>
-            </div>
-            <ul class="exp-points">
-              <li>Built CRUD applications using Django REST Framework for client projects</li>
-              <li>Implemented user authentication with JWT and role-based access control</li>
-              <li>Collaborated in an Agile team of 6 developers using Git & GitHub</li>
-            </ul>
-            <div class="exp-tags">
-              <span>Django REST</span><span>JWT</span><span>Git</span><span>MySQL</span>
-            </div>
-          </div>
-        </div>
-
       </div>
+
+      <!-- DESCRIPTION AS BULLETS -->
+      <ul class="exp-points">
+        {% for line in exp.description.splitlines %}
+          <li>{{ line }}</li>
+        {% endfor %}
+      </ul>
+
     </div>
+  </div>
+  {% endfor %}
+
+</div>
+
+
   </section>
 
   <!-- PROJECTS -->
@@ -377,132 +506,68 @@
         <button class="filter-btn" data-filter="api">API</button>
       </div>
 
-      <div class="projects-grid reveal">
+       <div class="projects-grid reveal">
 
-        <div class="project-card featured" data-category="fullstack">
-          <div class="project-number">01</div>
-          <div class="project-body">
-            <div class="project-top">
-              <div class="project-links">
-                <a href="#" class="proj-link" title="GitHub">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-                </a>
-                <a href="#" class="proj-link" title="Live Demo">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                </a>
-              </div>
-            </div>
-            <div class="project-label">Featured</div>
-            <h3 class="project-title">E-Commerce API Platform</h3>
-            <p class="project-desc">Full-featured Django REST + React e-commerce platform with Stripe payments, JWT auth, inventory management, and admin dashboard. Handles 10k+ products.</p>
-            <div class="project-stack">
-              <span>Django</span><span>React</span><span>PostgreSQL</span><span>Stripe</span><span>Docker</span>
-            </div>
-          </div>
+  {% for project in projects %}
+  <div class="project-card {% if forloop.first %}featured{% endif %}" data-category="{{ project.category }}">
+
+    <div class="project-number">
+      {{ forloop.counter|stringformat:"02d" }}
+    </div>
+
+    <div class="project-body">
+      <div class="project-top">
+        <div class="project-links">
+
+          {% if project.source_code %}
+         <a href="{{ project.source_code }}" class="proj-link" target="_blank">
+  <i class="fab fa-github"></i>
+  <span>Code</span>
+</a>
+          {% endif %}
+
+          {% if project.demo_link %}
+          <a href="{{ project.demo_link }}" class="proj-link" target="_blank">
+            <!-- Live icon -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="..."/>
+            </svg>
+          </a>
+          {% endif %}
+
         </div>
-
-        <div class="project-card" data-category="api">
-          <div class="project-number">02</div>
-          <div class="project-body">
-            <div class="project-top">
-              <div class="project-links">
-                <a href="#" class="proj-link">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-                </a>
-                <a href="#" class="proj-link">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                </a>
-              </div>
-            </div>
-            <h3 class="project-title">Task Manager API</h3>
-            <p class="project-desc">FastAPI microservice with async endpoints, WebSocket notifications, Celery task queues, and a Vue.js frontend. Full OpenAPI docs.</p>
-            <div class="project-stack">
-              <span>FastAPI</span><span>Celery</span><span>Redis</span><span>Vue.js</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card" data-category="backend">
-          <div class="project-number">03</div>
-          <div class="project-body">
-            <div class="project-top">
-              <div class="project-links">
-                <a href="#" class="proj-link">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-                </a>
-              </div>
-            </div>
-            <h3 class="project-title">Auth Microservice</h3>
-            <p class="project-desc">JWT + OAuth2 authentication microservice built with FastAPI. Supports Google/GitHub SSO, refresh tokens, and RBAC permissions.</p>
-            <div class="project-stack">
-              <span>FastAPI</span><span>OAuth2</span><span>JWT</span><span>PostgreSQL</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card" data-category="fullstack">
-          <div class="project-number">04</div>
-          <div class="project-body">
-            <div class="project-top">
-              <div class="project-links">
-                <a href="#" class="proj-link">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-                </a>
-                <a href="#" class="proj-link">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                </a>
-              </div>
-            </div>
-            <h3 class="project-title">Blog CMS Platform</h3>
-            <p class="project-desc">Headless CMS with Django backend and React frontend. Markdown editor, image uploads to S3, SEO optimization, and RSS feed support.</p>
-            <div class="project-stack">
-              <span>Django</span><span>React</span><span>S3</span><span>Markdown</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card" data-category="backend">
-          <div class="project-number">05</div>
-          <div class="project-body">
-            <div class="project-top">
-              <div class="project-links">
-                <a href="#" class="proj-link">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-                </a>
-              </div>
-            </div>
-            <h3 class="project-title">Data Pipeline Service</h3>
-            <p class="project-desc">ETL pipeline built with Python, Pandas & Celery. Processes CSV/JSON data sources and pushes to PostgreSQL with scheduling and email alerts.</p>
-            <div class="project-stack">
-              <span>Python</span><span>Pandas</span><span>Celery</span><span>PostgreSQL</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card" data-category="api">
-          <div class="project-number">06</div>
-          <div class="project-body">
-            <div class="project-top">
-              <div class="project-links">
-                <a href="#" class="proj-link">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-                </a>
-                <a href="#" class="proj-link">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                </a>
-              </div>
-            </div>
-            <h3 class="project-title">Real-time Chat API</h3>
-            <p class="project-desc">WebSocket-based chat server using FastAPI + Redis Pub/Sub. Supports rooms, file attachments, message history & read receipts.</p>
-            <div class="project-stack">
-              <span>FastAPI</span><span>WebSockets</span><span>Redis</span><span>MongoDB</span>
-            </div>
-          </div>
-        </div>
-
       </div>
+
+      {% if project.featured %}
+  <div class="project-label">Featured</div>
+{% endif %}
+
+      <h3 class="project-title">{{ project.title }}</h3>
+
+      <p class="project-desc">
+        {{ project.description }}
+      </p>
+
+      <div class="project-stack">
+       {% for tech in project.tech_list %}
+  <span>{{ tech }}</span>
+{% endfor %}
+      </div>
+
+    </div>
+  </div>
+  {% endfor %}
+
+</div>
+<div class="projects-cta">
+  <a href="https://github.com/PRAJILA-P/" target="_blank" class="view-more-btn">
+    View More Projects
+    <span class="arrow">↗</span>
+  </a>
+</div>
     </div>
   </section>
+
 
   <!-- CONTACT -->
   <section class="section contact" id="contact">
@@ -520,37 +585,40 @@
           <p class="contact-sub">I'm open to full-time roles, contract work, and interesting open-source collaborations. If you have a Python / Django / FastAPI project — let's talk.</p>
 
           <div class="contact-links">
-            <a href="mailto:you@email.com" class="contact-link">
+            <a href="mailto:prajilap01@gmail.com" class="contact-link">
               <div class="clink-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
               </div>
               <div class="clink-body">
                 <span class="clink-label">Email</span>
-                <span class="clink-value">you@email.com</span>
+                <span class="clink-value">prajilap01@gmail.com</span>
               </div>
               <svg class="clink-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
-            <a href="https://github.com/yourname" target="_blank" class="contact-link">
+            <a href="https://github.com/PRAJILA-P/" target="_blank" class="contact-link">
               <div class="clink-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
               </div>
               <div class="clink-body">
                 <span class="clink-label">GitHub</span>
-                <span class="clink-value">github.com/yourname</span>
+                <span class="clink-value">github.com/PRAJILA-P</span>
               </div>
               <svg class="clink-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
-            <a href="https://linkedin.com/in/yourname" target="_blank" class="contact-link">
-              <div class="clink-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-              </div>
-              <div class="clink-body">
-                <span class="clink-label">LinkedIn</span>
-                <span class="clink-value">linkedin.com/in/yourname</span>
-              </div>
-              <svg class="clink-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-            <a href="#" class="contact-link">
+
+            <a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank" class="contact-link">
+  <div class="clink-icon">
+    <img src="https://static.naukimg.com/s/0/0/i/naukri-identity/naukri_gnb_logo.svg" width="18" height="18" alt="Naukri">
+  </div>
+  <div class="clink-body">
+    <span class="clink-label">Naukri</span>
+    <span class="clink-value">naukri.com/your-profile</span>
+  </div>
+  <svg class="clink-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
+    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</a>
+            <a href="{% url 'download_resume' %}" class="contact-link">
               <div class="clink-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
               </div>
@@ -572,35 +640,71 @@
               <span>✓</span>
               <p>Message sent! I'll get back to you soon.</p>
             </div>
-            <div id="contactForm">
-              <div class="form-group">
-                <label class="form-label">NAME <span class="req">*</span></label>
-                <input type="text" id="fname" class="form-input" placeholder="John Doe" />
-              </div>
-              <div class="form-group">
-                <label class="form-label">EMAIL <span class="req">*</span></label>
-                <input type="email" id="femail" class="form-input" placeholder="john@company.com" />
-              </div>
-              <div class="form-group">
-                <label class="form-label">PROJECT TYPE</label>
-                <select id="ftype" class="form-input form-select">
-                  <option value="">-- Select type --</option>
-                  <option>Full Stack Web App</option>
-                  <option>REST API / Backend</option>
-                  <option>Django / FastAPI Project</option>
-                  <option>Open Source Collab</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label class="form-label">MESSAGE <span class="req">*</span></label>
-                <textarea id="fmessage" class="form-input form-textarea" placeholder="Tell me about your project..."></textarea>
-              </div>
-              <button class="btn-send" id="sendBtn">
-                <span>→ SEND MESSAGE</span>
-                <div class="send-loader hidden" id="sendLoader"></div>
-              </button>
-            </div>
+
+
+              <form method="POST" action="{% url 'send_message' %}" class="contact-form">
+  {% csrf_token %}
+
+  <div class="form-group">
+    <label class="form-label">NAME <span class="req">*</span></label>
+    <input type="text" name="name" class="form-input" required />
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">EMAIL <span class="req">*</span></label>
+    <input type="email" name="email" class="form-input" required />
+  </div>
+
+<!--  <div class="form-group">-->
+<!--    <label class="form-label">PROJECT TYPE</label>-->
+<!--    <select name="type" class="form-input form-select">-->
+<!--      <option value="">&#45;&#45; Select type &#45;&#45;</option>-->
+<!--      <option>Full Stack Web App</option>-->
+<!--      <option>REST API / Backend</option>-->
+<!--      <option>Django / FastAPI Project</option>-->
+<!--      <option>Open Source Collab</option>-->
+<!--      <option>Other</option>-->
+<!--    </select>-->
+<!--  </div>-->
+
+  <div class="form-group">
+    <label class="form-label">MESSAGE <span class="req">*</span></label>
+    <textarea name="message" class="form-input form-textarea" required></textarea>
+  </div>
+
+  <button type="submit" class="btn-send">
+    → SEND MESSAGE
+  </button>
+</form>
+<!--            <div id="contactForm">-->
+<!--              <div class="form-group">-->
+<!--                <label class="form-label">NAME <span class="req">*</span></label>-->
+<!--                <input type="text" id="fname" class="form-input" placeholder="John Doe" />-->
+<!--              </div>-->
+<!--              <div class="form-group">-->
+<!--                <label class="form-label">EMAIL <span class="req">*</span></label>-->
+<!--                <input type="email" id="femail" class="form-input" placeholder="john@company.com" />-->
+<!--              </div>-->
+<!--              <div class="form-group">-->
+<!--                <label class="form-label">PROJECT TYPE</label>-->
+<!--                <select id="ftype" class="form-input form-select">-->
+<!--                  <option value="">&#45;&#45; Select type &#45;&#45;</option>-->
+<!--                  <option>Full Stack Web App</option>-->
+<!--                  <option>REST API / Backend</option>-->
+<!--                  <option>Django / FastAPI Project</option>-->
+<!--                  <option>Open Source Collab</option>-->
+<!--                  <option>Other</option>-->
+<!--                </select>-->
+<!--              </div>-->
+<!--              <div class="form-group">-->
+<!--                <label class="form-label">MESSAGE <span class="req">*</span></label>-->
+<!--                <textarea id="fmessage" class="form-input form-textarea" placeholder="Tell me about your project..."></textarea>-->
+<!--              </div>-->
+<!--              <button class="btn-send" id="sendBtn">-->
+<!--                <span>→ SEND MESSAGE</span>-->
+<!--                <div class="send-loader hidden" id="sendLoader"></div>-->
+<!--              </button>-->
+<!--            </div>-->
           </div>
         </div>
       </div>
@@ -613,15 +717,15 @@
       <div class="footer-content">
         <div class="footer-logo">
           <span class="logo-bracket">&lt;</span>
-          <span class="logo-name">Alex</span>
+          <span class="logo-name">Prajila</span>
           <span class="logo-bracket">/&gt;</span>
         </div>
-        <p class="footer-copy">Designed & built by Alex Johnson · 2024</p>
-        <div class="footer-socials">
-          <a href="#" class="social-icon">GH</a>
-          <a href="#" class="social-icon">LI</a>
-          <a href="#" class="social-icon">TW</a>
-        </div>
+        <p class="footer-copy">Designed & built by PRAJILA P · </p>
+<!--        <div class="footer-socials">-->
+<!--          <a href="#" class="social-icon">GH</a>-->
+<!--          <a href="#" class="social-icon">LI</a>-->
+<!--          <a href="#" class="social-icon">TW</a>-->
+<!--        </div>-->
       </div>
     </div>
   </footer>
