@@ -37,7 +37,7 @@
   --bg-3: #e8e8f4;
   --bg-card: #ffffff;
   --bg-card-hover: #f4f4fc;
-  --border: rgba(0,0,0,0.08);
+  --border: rgba(0,0,0,0.08);F
   --border-hover: rgba(0, 150, 200, 0.4);
   --text: #0a0a1a;
   --text-2: #4a4a6a;
@@ -1230,6 +1230,7 @@ img { max-width: 100%; }
 *, *::before, *::after { cursor: auto !important; } a, button, .filter-btn, .theme-toggle, .nav-cta, .photo-frame-top { cursor: pointer !important; }
 
 
+
 /* ── CENTERED HERO OVERRIDE ── */
 .hero {
   flex-direction: column !important;
@@ -1436,7 +1437,35 @@ img { max-width: 100%; }
   transform: translate(4px, -4px);
 }
 
+/* 🔥 FIX: Hero Name Responsive (Mobile) */
+@media (max-width: 640px) {
+  .hero-name {
+    font-size: clamp(2rem, 8vw, 3rem); /* reduce size properly */
+    line-height: 1.2;
+    word-break: break-word; /* prevent overflow */
+    overflow-wrap: break-word;
+    text-align: center;
+  }
 
+  .name-line {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+/* 🔥 FIX: Remove gap between Hero & About on mobile */
+@media (max-width: 640px) {
+  .hero {
+    min-height: auto;        /* remove forced full height */
+    padding-bottom: 30px;    /* reduce extra space */
+  }
+
+  .about {
+    margin-top: 0;
+    padding-top: 3rem;       /* keep nice spacing inside About */
+  }
+}
 /* Remove old skills styles that might conflict */
 .skills-grid, .skill-category, .skill-list, .skill-item,
 .skill-bar, .skill-fill, .skill-pct, .tech-cloud, .tech-pill { display: none !important; }
